@@ -1,0 +1,126 @@
+/* Importación de Google Fonts: Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Material Icons Google */
+.material-icons {
+  font-family: 'Material Icons' !important;
+}
+
+* {
+  font-family: 'Poppins' !important;
+  font-size: 19px;
+}
+
+.img-login-section {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.boton-ingresar, .boton-registrar, .subir-foto, .agregar-redes, .boton-mas {
+  color: #ffffff;
+  background-color: #3a5885;
+}
+
+.boton-ingresar:hover, .boton-registrar:hover, .subir-foto:hover, .agregar-redes:hover, .boton-mas:hover {
+  color: #ffffff;
+  background-color: #b79f26;
+}
+
+.forgot-pass:hover, .data-policies:hover  {
+  color: #b79f26;
+}
+
+/* registro.html */
+.logo-registro {
+  width: 15%;
+}
+
+/* pages/egresados.html */
+.nav-link, .card-link {
+  color: #000000;
+  font-size: 16px;
+}
+
+/* Card Links Egresados */
+.card-link {
+  text-decoration: none;
+}
+
+.card-link:hover {
+  color: #b79f26;
+}
+
+/* Elementos de Bootstrap modificados */
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+  font-weight: 600;
+}
+
+.nav-underline .nav-link.active, .nav-underline {
+  border-bottom-width: 3.5px;
+  border-bottom-color: #b79f26;
+}
+
+.nav-underline .nav-link:focus, .nav-underline .nav-link:hover {
+  color: #000000;
+  font-weight: 600;
+  border-bottom-width: 3.5px;
+  border-bottom-color: #b79f26;
+}
+
+/* Barra buscar */
+.barra-buscar {
+  width: 15%;
+}
+
+/* Botones Iniciar sesión y Registrate */
+.boton-login, .boton-signup {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #3a5885;
+}
+
+.boton-login:hover, .boton-signup:hover {
+  color: #ffffff;
+  background-color: #b79f26;
+}
+
+/* Portada principal - Edificio INTEP */
+.portada-principal {
+  background-image: linear-gradient(to top, rgba(47, 57, 199, 0.39) 0%, 
+  rgba(74, 92, 255, 0.39) 100%),
+  url('../img/edificio_antiguo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Información de Servicios */
+.info_servicios {
+  background-color: #1a2d4b;
+}
+
+/* Información de Comercios */
+.info_comercios {
+  background-color: #b79f26;
+}
+
+/* Links Ver más */
+.ver-mas:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: #b79f26 !important;
+}
+
+.ver-mas-blue:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: #1a2d4b !important;
+}
+
+/* Footer Egresados */
+.footer-egresados {
+  background-color: #1a2d4b;
+}

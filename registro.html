@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="shortcut icon" href="img/egresados-intep.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+  <!-- FORMULARIO DE REGISTRO - EGRESADOS INTEP -->
+  <main>
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 0px;">
+
+        <!-- Ingreso de Usuario y Contraseña -->
+        <div class="col-sm-6 login-section-wrapper py-3">
+          <div class="band-wrapper py-4">
+            <img src="img/egresados-intep.png" alt="INTEP EGRESADOS" title="INTEP EGRESADOS" class="mx-auto d-block logo-registro">
+          </div>
+          <div class="login-wrapper px-1">
+            <form class="px-3" action="">
+              <h2 class="fw-bold text-center text-body-emphasis mb-3">Formulario de registro</h2>
+
+              <label for="floatingInput mb-3" style="font-weight: bold;">Nombre completo*</label>
+              <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Escribe tu nombre y apellidos" required>
+                <label for="floatingInput">Escribe tu nombre y apellidos</label>
+              </div>
+
+              <label for="floatingInput mb-3" style="font-weight: bold;">Tipo de documento*</label>
+              <div class="mb-2">
+                <select name="tipo_documento" id="tipo_documento" class="form-select mb-3">
+                  <option value selected>Seleccionar tipo documento...</option>
+                  <option value="T.I.">Tarjeta de Identidad</option>
+                  <option value="C.C.">Cédula de Ciudadanía</option>
+                  <option value="C.E.">Cédula de Extrangería</option>
+                  <option value="P.P.">Pasaporte</option>
+                </select>
+              </div>
+
+              <label for="floatingInput mb-3" style="font-weight: bold;">Número del documento de identidad*</label>
+              <div class="form-floating mb-2">
+                <input type="number" class="form-control" id="floatingInput" placeholder="Escribe tu número de documento" required>
+                <label for="floatingInput">Escribe tu número de documento</label>
+              </div>
+
+              <div class="upload-button mb-3">
+                <p class="fw-bold text-body-emphasis mb-3">
+                  Sube tu foto de perfil
+                  <span class="fw-normal">(Opcional)</span>
+                </p>
+                <p>Puedes subir tu foto de perfil, de preferencia en formatos JPG, JPEG o PNG, con un peso máximo de 10 MB.</p>
+                <a href="" class="btn subir-foto upload">
+                  <span>Cargar archivos</span>
+                </a>
+              </div>
+
+              <div class="mb-3">
+                <label for="floatingInput mb-3" style="font-weight: bold;">Egresado de*</label>
+                <select name="graduado" id="graduado" class="form-select mb-3">
+                  <option>--Seleccionar programa--</option>
+                  <!-- Unidad de Ciencias Ambientales y Agropecuarias -->
+                  <option disabled style="color: #ffffff; background-color: #b79f26; font-weight: bold;">Unidad de Ciencias Ambientales y Agropecuarias</option>
+                  <option value="tecnico_agro">Técnico Profesional en Producción Agropecuaria</option>
+                  <option value="tecnico_agro">Técnico Profesional en Procesos Agroindustriales</option>
+                  <option value="tecnico_agro">
+                    Técnico Profesional en Promotoría Ambiental
+                  </option>
+                  <option value="tecnico_agro">Técnico Profesional en Producción Agrícola</option>
+                  <option value="tecnologia_agro">Tecnología en Producción y Gestión Agropecuaria</option>
+                  <option value="tecnologia_agro">Tecnología en Gestión Agroindustrial</option>
+                  <option value="tecnologia_agro">Tecnología en Gestión Ambiental</option>
+                  <option value="tecnologia_agro">Tecnología en Gestión de la Producción Agrícola</option>
+                  <option value="prof_agro">Administración Agropecuaria</option>
+                  <option value="prof_agro">Profesional en Agroindustria</option>
+                  <option value="prof_agro">Administración Ambiental</option>
+
+                  <!-- Unidad de Sistemas y Electricidad -->
+                  <option disabled style="color: #ffffff; background-color: #b79f26; font-weight: bold;">Unidad de Sistemas y Electricidad</option>
+                  <option value="tecnico_grafico">Técnico Profesional en Expresión Gráfica y Digital</option>
+                  <option value="tecnico_soporte">Técnica Profesional en Soporte de Sistemas Informáticos y Redes</option>
+                  <option value="tecnologia_grafico">Tecnología en Producción de Animación Digital</option>
+                  <option value="tecnologia_sistemas">Tecnología en Gestión de Sistemas Informáticos</option>
+                  <option value="prof_visual">Profesional en Diseño Visual Digital</option>
+                  <option value="prof_infor">Ingeniería Informática</option>
+
+                  <!-- Unidad de Administración y Contaduría -->
+                  <option disabled style="color: #ffffff; background-color: #b79f26; font-weight: bold;">Unidad de Administración y Contaduría</option>
+                  <option value="tecnico_contable">Técnico Profesional en Contabilidad y Costos</option>
+                  <option value="tecnico_admin">Técnica Profesional en Procesos Administrativos</option>
+                  <option value="tecnologia_contable">Tecnología en Gestión Contable</option>
+                  <option value="tecnologia_empres">Tecnología en Gestión Empresarial</option>
+                  <option value="prof_contable">Contaduría Pública</option>
+                  <option value="prof_admon">Administración de Empresas</option>
+                </select>
+              </div>
+
+              <label for="floatingInput mb-3" style="font-weight: bold;">Profesión*</label>
+              <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Escribe tu profesión" required>
+                <label for="floatingInput">Escribe tu profesión</label>
+              </div>
+
+              <label for="floatingInput mb-3" style="font-weight: bold;">Número telefónico*</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">+57</span>
+                <input type="number" class="form-control" placeholder="Escribe tu número de contacto, fijo o celular. Ejemplo fijo: 6029999999" aria-label="Telefono" aria-describedby="basic-addon1">
+              </div>
+
+              <label for="floatingInput mb-3" style="font-weight: bold;">Correo electrónico*</label>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Digita tu correo electrónico" aria-label="Email"
+                  aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@intep.edu.co</span>
+              </div>
+
+              <label for="floatingInput mb-3" style="font-weight: bold;">Redes sociales</label>
+              <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="floatingInput" placeholder="URL de tu perfil. Ejemplo: https://facebook.com/usuariofacebook" required>
+                <label for="floatingInput">URL de tu perfil. Ejemplo: https://facebook.com/usuariofacebook</label>
+              </div>
+
+              <!-- Agrega nuevos Inputs para más redes sociales -->
+              <button id="agregarInput" class="btn agregar-redes mb-3">
+                <strong>+</strong>
+              </button>
+              <div id="contenedorInputs" class="w-50"></div>
+
+              <!-- Ejemplo botón borrar - Material Icons Google -->
+              <!-- <span class="material-icons">
+                delete
+              </span> -->
+
+              <div class="form-floating mb-2">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña*" required>
+                <label for="floatingPassword">Contraseña*</label>
+              </div>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" required> Recordar mi acceso
+                </label>
+              </div>
+              <a href="pages/egresados.html" class="w-100 btn btn-lg boton-ingresar" type="submit">
+                <strong>INGRESAR</strong>
+              </a>
+              <br /><br />
+              <a href="#" class="w-100 btn btn-lg boton-registrar">
+                <strong>REGÍSTRATE</strong>
+              </a>
+              <hr class="my-4">
+              <div class="d-inline">
+                <a href="forgotpass.html" class="px-2 forgot-pass">
+                  Olvidé mi contraseña
+                </a>
+                <a href="#" class="px-2 data-policies">
+                  Tratamiento de datos personales
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Fondo -->
+        <div class="col-sm-6 px-0 d-none d-sm-block">
+          <img src="img/fondo.png" alt="Login" class="img-login-section">
+        </div>
+        
+      </div>
+    </div>
+  </main>
+
+    
+
+  <!-- Boostrap Js -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- script.js -->
+  <script src="js/script.js"></script>
+</body>
+</html>
