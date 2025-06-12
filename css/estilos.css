@@ -8,7 +8,7 @@
 
 * {
   font-family: 'Poppins' !important;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .img-login-section {
@@ -18,12 +18,14 @@
   object-position: left;
 }
 
-.boton-ingresar, .boton-registrar, .subir-foto, .agregar-redes, .boton-mas {
+/* Botones */
+.boton-ingresar, .boton-registrar, .enviar-correo, .agregar-redes, .subir-foto, .agregar-redes, .boton-mas, .buscar-egresado, .ver-perfil {
   color: #ffffff;
   background-color: #3a5885;
 }
 
-.boton-ingresar:hover, .boton-registrar:hover, .subir-foto:hover, .agregar-redes:hover, .boton-mas:hover {
+/* Botones:hover */
+.boton-ingresar:hover, .boton-registrar:hover, .enviar-correo:hover, .subir-foto:hover, .agregar-redes:hover, .boton-mas:hover, .buscar-egresado:hover, .ver-perfil:hover {
   color: #ffffff;
   background-color: #b79f26;
 }
@@ -32,9 +34,44 @@
   color: #b79f26;
 }
 
+/* index.html - Login */
+.logo-login {
+  max-width: 15%;
+}
+
+/* forgotpass.html - Olvidé mi contraseña */
+/* Link Volver al Login */
+.back-login {
+  font-weight: 500;
+}
+
+.back-login:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: #b79f26 !important;
+}
+
 /* registro.html */
 .logo-registro {
   width: 15%;
+}
+
+#contenedorInputs > div {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: row;
+}
+
+#contenedorInputs > div > .form-control {
+  max-width: 90%;
+}
+
+/* registro.html - Función de borrar input para redes */
+.borrar-redes {
+  border-radius: 10%;
+  color: #ffffff;
+  background-color: #3a5885;
+  margin-left: 1em;
 }
 
 /* pages/egresados.html */
@@ -64,7 +101,6 @@
 
 .nav-underline .nav-link:focus, .nav-underline .nav-link:hover {
   color: #000000;
-  font-weight: 600;
   border-bottom-width: 3.5px;
   border-bottom-color: #b79f26;
 }
@@ -123,4 +159,15 @@
 /* Footer Egresados */
 .footer-egresados {
   background-color: #1a2d4b;
+}
+
+/* perfiles.html */
+.portada-perfiles {
+  background-image: linear-gradient(to top, rgba(47, 57, 199, 0.39) 0%, 
+  rgba(74, 92, 255, 0.39) 100%),
+  url('../img/perfiles.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
 }
