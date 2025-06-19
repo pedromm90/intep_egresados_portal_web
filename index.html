@@ -3,70 +3,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egresados INTEP - Portal Web</title>
+    <title>Egresados INTEP - Inicio</title>
     <link rel="shortcut icon" href="img/egresados-intep.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Google Material Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    
-  <!-- FORMULARIO DE INGRESO - EGRESADOS INTEP -->
+  
   <main>
-    <div class="container-fluid">
-      <div class="row" style="margin-top: 0px;">
 
-        <!-- Ingreso de Usuario y Contraseña -->
-        <div class="col-sm-5 login-section-wrapper py-5">
-          <div class="band-wrapper py-5">
-            <img src="img/egresados-intep.png" alt="INTEP EGRESADOS" title="INTEP EGRESADOS" class="logo-login mx-auto d-block">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="mainNav">
+      <div class="container-fluid mx-5">
+        <a href="#" class="navbar-brand justify-content-start">
+          <img src="img/egresados-intep.png" alt="Logo Egresados" width="80" height="80" class="d-inline-block align-text-top">
+        </a>
+        <!-- navbar-toggler para el menú responsive -->
+        <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded menu-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav nav nav-underline ms-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link active py-3 px-0" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown mx-0 mx-lg-1">
+              <a class="nav-link dropdown-toggle py-3 px-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Portafolio comercial</a>
+              <div class="dropdown-menu bg-body-tertiary">
+                <a class="dropdown-item" href="#">Servicios</a>
+                <a class="dropdown-item" href="#">Comercios</a>
+                <a class="dropdown-item" href="#">Emprendimientos</a>
+                <a class="dropdown-item" href="#">Productos</a>
+              </div>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0" href="login.html">
+                <i class="bi bi-person-fill"></i>
+                Iniciar sesión
+              </a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0" href="registro.html">
+                <i class="bi bi-person-lines-fill"></i>
+                Regístrate
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Portada de la página -->
+    <div class="p-4 mb-4 bg-body-secondary portada-principal">
+      <div class="px-4 text-center">
+        <h3 class="fw-bold mb-5" style="color: #fff;">Comunidad de</h3>
+        <h1 class="mb-4" style="font-weight: 800; color: #fff;">Egresados INTEP</h1>
+        <img style="max-width: 8%;" src="../img/logo_intep.png" alt="Logo INTEP">
+      </div>
+    </div>
+
+    <!-- Información general -->
+    <div class="container">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h2
+            class="text-body-emphasis lh-1 mb-5"
+            style="text-decoration-line: underline;
+            text-decoration-color: #b79f26;
+            text-decoration-thickness: 5px;
+            text-underline-offset: 15px;">Información general</h2>
+          <p class="lead" style="font-size: 20px; text-align: justify;">El Egresado del Instituto de Educación Técnica Profesional - INTEP es considerado un profesional que se caracteriza por su adaptabilidad al cambio, su constante búsqueda del conocimiento, su participación en la resolución de conflictos y se convierte en transformador de su entorno e impulsador de progreso, mejorando las condiciones de vida de la comunidad. De igual forma, constituye un componente importante dentro de la organización institucional y de la proyección con la realidad social, cultural, política, económica e histórica del país en general.</p>
+        </div>
+        <div class="col-lg-6 mb-5">
+          <img src="../img/egresada.png"
+            alt="Egresado"
+            class="d-block mx-lg-auto"
+            width="450"
+            height="550"
+            loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- Orgullo INTEP-->
+     <div class="container my-5">
+      <div class="row">
+        <h2
+            class="text-body-emphasis lh-1 mb-5 text-center"
+            style="text-decoration-line: underline;
+            text-decoration-color: #b79f26;
+            text-decoration-thickness: 5px;
+            text-underline-offset: 15px;">Orgullo INTEP</h2>
+
+        <div class="mb-1">
+          <p class="lead" style="font-size: 20px; text-align: justify;">Nuestros egresados se destacan en diferentes ramas, que aportan económicamente no solo a la región, además contribuyen el crecimiento del país. Los perfiles destacados en esta sección, son representaciones de nuestra misión y visión como Instituto, para la formación de futuros profesionales. <a href="perfiles.html" class="text-black fw-semibold text-decoration-none ver-mas" style="font-size: 20px;">Ver más</a></p>
+        </div>
+
+        <div class="container">
+          <!-- Fila 1 -->
+          <div class="row mb-2">
+        
+            <!-- EG 1 -->
+            <div class="col-md-3 mb-2">
+              <div class="card h-100 p-2 py-3">
+                <div class="text-center">
+                  <img src="../img/egresado_1.png" width="100" class="rounded-circle">
+                </div>
+                <div class="text-center mt-3">
+                  <h5 class="mt-2 mb-0">María Restrepo</h5>
+                  <span>Contadora pública</span>
+                  <div class="px-4 mt-1">
+                    <p class="fonts" style="font-size: 13px; text-align: justify;">Domina normas tributarias y NIIF, elabora e interpreta estados financieros y auditorías. Analiza datos para optimizar recursos, controlar costos y guiar la planeación tributaria y financiera.</p>
+                      <h6>Contacto</h6>
+                        <a href="#" class="card-link bi bi-whatsapp">
+                          <span style="font-size: 13px;">+57 310 000 1122</span>
+                        </a>
+                  </div>
+                  <ul class="social-list">
+                    <li><a href="#" class="card-link bi bi-facebook"></a></li>
+                    <li><a href="#" class="card-link bi bi-instagram"></a></li>
+                    <li><a href="#" class="card-link bi bi-tiktok"></a></li>
+                    <li><a href="#" class="card-link bi bi-linkedin"></a></li>
+                  </ul>
+                </div>
+                <div class="buttons">
+                  <a class="btn ver-perfil w-100" href="#">Perfil completo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- EG 2 -->
+            <div class="col-md-3 mb-2">
+              <div class="card h-100 p-2 py-3">
+                <div class="text-center">
+                  <img src="../img/egresado_2.png" width="100" class="rounded-circle">
+                </div>
+                <div class="text-center mt-3">
+                  <h5 class="mt-2 mb-0">José Perea</h5>
+                  <span>Tecnólogo de Sistemas Informáticos</span>
+                  <div class="px-4 mt-1">
+                    <p class="fonts" style="font-size: 13px; text-align: justify;">Se especializa en el análisis, diseño, desarrollo y mantenimiento de software con calidad, atendiendo requerimientos en entornos locales y web sobre diversas plataformas.</p>
+                      <h6>Contacto</h6>
+                        <a href="#" class="card-link bi bi-whatsapp">
+                          <span style="font-size: 13px;">+57 310 000 1122</span>
+                        </a>
+                  </div>
+                  <ul class="social-list">
+                    <li><a href="#" class="card-link bi bi-facebook"></a></li>
+                    <li><a href="#" class="card-link bi bi-instagram"></a></li>
+                    <li><a href="#" class="card-link bi bi-tiktok"></a></li>
+                    <li><a href="#" class="card-link bi bi-linkedin"></a></li>
+                  </ul>
+                </div>
+                <div class="buttons">
+                  <a class="btn ver-perfil w-100" href="#">Perfil completo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- EG 3 -->
+            <div class="col-md-3 mb-2">
+              <div class="card h-100 p-2 py-3">
+                <div class="text-center">
+                  <img src="../img/egresado_3.png" width="100" class="rounded-circle">
+                </div>
+                <div class="text-center mt-3">
+                  <h5 class="mt-2 mb-0">Daniel Agudelo</h5>
+                  <span>Profesional en Agroindustria</span>
+                  <div class="px-4 mt-1">
+                    <p class="fonts" style="font-size: 13px; text-align: justify;">Destacado en procesos productivos y transformación de materias primas con planeación estratégica, gestión de costos y control de calidad, liderando equipos e impulsando innovación y sostenibilidad. Eleva la competitividad y eficiencia operativa en el sector agroindustrial colombiano.</p>
+                      <h6>Contacto</h6>
+                        <a href="#" class="card-link bi bi-whatsapp">
+                          <span style="font-size: 13px;">+57 310 000 1122</span>
+                        </a>
+                  </div>
+                  <ul class="social-list">
+                    <li><a href="#" class="card-link bi bi-facebook"></a></li>
+                    <li><a href="#" class="card-link bi bi-instagram"></a></li>
+                    <li><a href="#" class="card-link bi bi-tiktok"></a></li>
+                    <li><a href="#" class="card-link bi bi-linkedin"></a></li>
+                  </ul>
+                </div>
+                <div class="buttons">
+                  <a class="btn ver-perfil w-100" href="#">Perfil completo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- EG 4 -->
+            <div class="col-md-3 mb-2">
+              <div class="card h-100 p-2 py-3">
+                <div class="text-center">
+                  <img src="../img/pedro.png" width="100" class="rounded-circle">
+                </div>
+                <div class="text-center mt-3">
+                  <h5 class="mt-2 mb-0">Pedro Muñeton</h5>
+                  <span>Técnico en Sistemas</span>
+                  <div class="px-4 mt-1">
+                    <p class="fonts" style="font-size: 13px; text-align: justify;">Especializado en mantenimiento y configuración de hardware, redes y software, brinda soporte técnico, administra sistemas y garantiza la continuidad operativa de la infraestructura TI.</p>
+                      <h6>Contacto</h6>
+                        <a href="#" class="card-link bi bi-whatsapp">
+                          <span style="font-size: 13px;">+57 310 000 1122</span>
+                        </a>
+                  </div>
+                  <ul class="social-list">
+                    <li><a href="#" class="card-link bi bi-facebook"></a></li>
+                    <li><a href="#" class="card-link bi bi-instagram"></a></li>
+                    <li><a href="#" class="card-link bi bi-tiktok"></a></li>
+                    <li><a href="#" class="card-link bi bi-linkedin"></a></li>
+                  </ul>
+                </div>
+                <div class="buttons">
+                  <a class="btn ver-perfil w-100" href="#">Perfil completo</a>
+                </div>
+              </div>
+            </div>
+        
           </div>
-          <div class="login-wrapper px-1">
-            <form class="px-5" action="">
-              <h2 class="fw-bold text-center text-body-emphasis mb-3">Iniciar sesión</h2>
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Usuario*" required>
-                <label for="floatingInput">Usuario*</label>
+
+          <!-- Fila 2 -->
+          <div class="row">
+        
+            <!-- EG 5 -->
+            <div class="col-md-3 mb-2">
+              <div class="card h-100 p-2 py-3">
+                <div class="text-center">
+                  <img src="../img/egresado_5.png" width="100" class="rounded-circle">
+                </div>
+                <div class="text-center mt-3">
+                  <h5 class="mt-2 mb-0">Luis Velez</h5>
+                  <span>Técnico en Producción Agrícola</span>
+                  <div class="px-4 mt-1">
+                    <p class="fonts" style="font-size: 13px; text-align: justify;">Destacado por dirigir y supervisar procesos de producción agrícola, desde la planificación y uso de maquinaria hasta la gestión integrada de cultivos para maximizar rendimiento y calidad. Implementa prácticas sostenibles y resilientes, articulando productores a cadenas de valor y fortaleciendo la competitividad regional.</p>
+                      <h6>Contacto</h6>
+                        <a href="#" class="card-link bi bi-whatsapp">
+                          <span style="font-size: 13px;">+57 310 000 1122</span>
+                        </a>
+                  </div>
+                  <ul class="social-list">
+                    <li><a href="#" class="card-link bi bi-facebook"></a></li>
+                    <li><a href="#" class="card-link bi bi-instagram"></a></li>
+                    <li><a href="#" class="card-link bi bi-tiktok"></a></li>
+                    <li><a href="#" class="card-link bi bi-linkedin"></a></li>
+                  </ul>
+                </div>
+                <div class="buttons">
+                  <a class="btn ver-perfil w-100" href="#">Perfil completo</a>
+                </div>
               </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña*" required>
-                <label for="floatingPassword">Contraseña*</label>
+            </div>
+
+            <!-- EG 6 -->
+            <div class="col-md-3 mb-2">
+              <div class="card h-100 p-2 py-3">
+                <div class="text-center">
+                  <img src="../img/egresado_6.png" width="100" class="rounded-circle">
+                </div>
+                <div class="text-center mt-3">
+                  <h5 class="mt-2 mb-0">Jenny Ruiz</h5>
+                  <span>Administración de Empresas</span>
+                  <div class="px-4 mt-1">
+                    <p class="fonts" style="font-size: 13px; text-align: justify;">Se destaca por optimizar recursos, y coordina áreas organizacionales para cumplir objetivos, liderar equipos y diseñar estrategias empresariales, asegurando rentabilidad, eficiencia y crecimiento sostenible.</p>
+                      <h6>Contacto</h6>
+                        <a href="#" class="card-link bi bi-whatsapp">
+                          <span style="font-size: 13px;">+57 310 000 1122</span>
+                        </a>
+                  </div>
+                  <ul class="social-list">
+                    <li><a href="#" class="card-link bi bi-facebook"></a></li>
+                    <li><a href="#" class="card-link bi bi-instagram"></a></li>
+                    <li><a href="#" class="card-link bi bi-tiktok"></a></li>
+                    <li><a href="#" class="card-link bi bi-linkedin"></a></li>
+                  </ul>
+                </div>
+                <div class="buttons">
+                  <a class="btn ver-perfil w-100" href="#">Perfil completo</a>
+                </div>
               </div>
-              <div class="checkbox mb-3">
-                <label>
-                  <input type="checkbox" value="remember-me" required> Recordar mi acceso
-                </label>
+            </div>
+
+            <!-- EG 7 -->
+            <div class="col-md-3 mb-2">
+              <div class="card h-100 p-2 py-3">
+                <div class="text-center">
+                  <img src="../img/egresado_7.png" width="100" class="rounded-circle">
+                </div>
+                <div class="text-center mt-3">
+                  <h5 class="mt-2 mb-0">Daniela Jimenez</h5>
+                  <span>Técnica en Producción Gráfica</span>
+                  <div class="px-4 mt-1">
+                    <p class="fonts" style="font-size: 13px; text-align: justify;">Domina la producción gráfica integral: desde la preprensa y retoque de imágenes hasta la ilustración digital, diagramación editorial y preparación de archivos de imprenta. Aplica tecnologías digitales e innovación creativa para generar piezas multimedia competitivas en la industria cultural y publicitaria.</p>
+                      <h6>Contacto</h6>
+                        <a href="#" class="card-link bi bi-whatsapp">
+                          <span style="font-size: 13px;">+57 310 000 1122</span>
+                        </a>
+                  </div>
+                  <ul class="social-list">
+                    <li><a href="#" class="card-link bi bi-facebook"></a></li>
+                    <li><a href="#" class="card-link bi bi-instagram"></a></li>
+                    <li><a href="#" class="card-link bi bi-tiktok"></a></li>
+                    <li><a href="#" class="card-link bi bi-linkedin"></a></li>
+                  </ul>
+                </div>
+                <div class="buttons">
+                  <a class="btn ver-perfil w-100" href="#">Perfil completo</a>
+                </div>
               </div>
-              <a href="pages/egresados.html" class="w-100 btn btn-lg boton-ingresar" type="submit">
-                <strong>INGRESAR</strong>
-              </a>
-              <br /><br />
-              <a href="registro.html" class="w-100 btn btn-lg boton-registrar">
-                <strong>REGÍSTRATE</strong>
-              </a>
-              <hr class="my-4">
-              <a href="forgotpass.html" class="forgot-pass">Olvidé mi contraseña</a>
-              <br />
-              <a href="#" class="data-policies">Tratamiento de datos personales</a>
-            </form>
+            </div>
+
+            <!-- EG 8 -->
+            <div class="col-md-3">
+              <div class="card h-100 p-2 py-3">
+                <div class="text-center">
+                  <img src="../img/egresado_8.png" width="100" class="rounded-circle">
+                </div>
+                <div class="text-center mt-3">
+                  <h5 class="mt-2 mb-0">Julieta Bonilla</h5>
+                  <span>Tecnóloga en Gestión Contable</span>
+                  <div class="px-4 mt-1">
+                    <p class="fonts" style="font-size: 13px; text-align: justify;">Gestiona procesos contables y financieros, elaborando y analizando estados financieros, presupuestos y auditorías internas. Asesora en decisiones estratégicas, implementa sistemas de control interno y optimiza recursos con herramientas tecnológicas.</p>
+                      <h6>Contacto</h6>
+                        <a href="#" class="card-link bi bi-whatsapp">
+                          <span style="font-size: 13px;">+57 310 000 1122</span>
+                        </a>
+                  </div>
+                  <ul class="social-list">
+                    <li><a href="#" class="card-link bi bi-facebook"></a></li>
+                    <li><a href="#" class="card-link bi bi-instagram"></a></li>
+                    <li><a href="#" class="card-link bi bi-tiktok"></a></li>
+                    <li><a href="#" class="card-link bi bi-linkedin"></a></li>
+                  </ul>
+                </div>
+                <div class="buttons">
+                  <a class="btn ver-perfil w-100" href="#">Perfil completo</a>
+                </div>
+              </div>
+            </div>
+        
           </div>
         </div>
 
-        <!-- Fondo -->
-        <div class="col-sm-7 px-0 d-none d-sm-block">
-          <img src="img/fondo.png" alt="Login" class="img-login-section">
+        
+      </div>
+     </div>
+
+    <!-- Servicios de egresados -->
+    <div class="container-fluid my-5">
+      <div class="row align-items-center g-4 pb-4 info_servicios">
+        <div class="col-lg-6">
+          <img src="../img/servicios.png" alt="Egresado" class="d-block mx-lg-auto" width="450" height="450" loading="lazy">
+        </div>
+      
+        <div class="col-lg-6 mx-auto px-5">
+          <h2 class="text-body-emphasis lh-1 mb-5 text-center" style="color: #fff !important;
+                      text-decoration-line: underline;
+                      text-decoration-color: #b79f26;
+                      text-decoration-thickness: 5px;
+                      text-underline-offset: 15px;">Servicios</h2>
+          <p class="text-light lead" style="font-size: 20px; text-align: justify;">El egresado INTEP se caracteriza por tener el perfil para el emprendimiento, mostrando
+            aptitudes y cualidades necesarios para aportar en el crecimiento de la región. En esta sección, conoceremos los
+            servicios que los egresados nos ofrecen.</p>
+          <br />
+          <a href="#" class="text-light text-decoration-none fw-semibold ver-mas" style="font-size: 22px;">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comercios de los egresados -->
+    <div class="container-fluid my-5">
+      <div class="row align-items-center g-4 pb-4 info_comercios">
+        <div class="col-lg-6 mx-auto px-5">
+          <h2 class="text-body-emphasis lh-1 mb-5 text-center" style="color: #fff !important;
+                          text-decoration-line: underline;
+                          text-decoration-color: #1a2d4b;
+                          text-decoration-thickness: 5px;
+                          text-underline-offset: 15px;">Comercios</h2>
+          <p class="text-light lead" style="font-size: 20px; text-align: justify;">El comercio dentro, y fuera de la región es un pilar fundamental y los egresados del INTEP
+            dan a conocer sus negocios, en referncia de todo su portafolio de trabajo.</p>
+          <br />
+          <a href="#" class="text-light text-decoration-none fw-semibold ver-mas-blue" style="font-size: 22px;">Ver más</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="../img/comercios.png" alt="Egresado" class="d-block mx-lg-auto" width="450" height="450" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- Productos de los egresados -->
+    <div class="container my-5">
+      <div class="row">
+        <h2
+            class="text-body-emphasis lh-1 mb-5 text-center"
+            style="text-decoration-line: underline;
+            text-decoration-color: #b79f26;
+            text-decoration-thickness: 5px;
+            text-underline-offset: 15px;">Productos destacados</h2>
+
+        <div class="mb-1">
+          <p class="lead" style="font-size: 20px; text-align: justify;">Nuestros egresados son destacados por ser emprendedores, que sacan adelante sus proyectos personales y profesionales. Sus productos aportan al crecimiento de nuestro municipio de Roldanillo, y tienen facilidades en el negocio local y a nivel nacional. <a href="#" class="text-black text-decoration-none fw-semibold ver-mas" style="font-size: 20px;">Ver más</a></p>
+        </div>
+      </div>
+
+      <!-- Container productos -->
+      <div class="container my-5">
+        <div class="row mx-auto my-auto">
+          <!-- Producto 1 -->
+          <div class="col-sm-4">
+            <div class="card h-100">
+              <img src="../img/productos/prolacteos.jpg" alt="Prolacteos Roldanillo">
+              <div class="card-body">
+                <h4 class="card-title text-center">Prolacteos Roldanillo</h4>
+                <p class="card-text">Prolácteos Roldanillo es un ejemplo de una familia emprendedora que ha consolidado un negocio
+                  local, pues llevan más de 26 años en el mercado.</p>
+                <a href="#" class="btn boton-mas">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+           <!-- Producto 2 -->
+          <div class="col-sm-4">
+            <div class="card h-100">
+              <img src="../img/productos/fibernet.jpg" alt="Fibernet">
+              <div class="card-body">
+                <h4 class="card-title text-center">Fibernet ISP</h4>
+                <p class="card-text">FIBERNET ISP es una empresa que presta servicio de internet a través de fibra óptica hasta el
+                  hogar en el municipio de Roldanillo, Valle del Cauca.</p>
+                <a href="#" class="btn boton-mas">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col-sm-4">
+            <div class="card h-100">
+              <img src="../img/productos/eco132.jpg" alt="Eco - Skin Care">
+              <div class="card-body">
+                <h4 class="card-title text-center">Eco - H</h4>
+                <p class="card-text">Elaboración de jabones artesanales ecológicos para el cuidado de la piel</p>
+                <a href="#" class="btn boton-mas">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+    <!-- Footer de la página -->
+    <footer class="container-fluid pt-5 border-top footer-egresados">
+      <div class="row">
+
+        <div class="col-4 col-md px-5">
+          <img src="../img/egresados_blanco.png" alt="Egresados INTEP" width="70" height="70">
+          <br /><br />
+          <p class="text-light fw-semibold">Instituto de Educación Técnica Profesional (INTEP)</p>
+          <p class="text-light fw-semibold">Apoyo al Egresado</p>
+          <span class="text-light">
+            Calle 10 # 6 - 21 <br>
+            Roldanillo, Valle del Cauca, <br>
+            Colombia <br><br>
+          </span>
+          <a class="text-light fw-semibold footer-facebook" href="https://www.facebook.com/intepegresados" style="font-size: 14px; text-decoration: none;" target="_blank">
+            <span class="bi bi-facebook"></span>
+            Egresados - INTEP
+          </a>
+          <br>
+          <a class="text-light fw-semibold lh-1 footer-email" href="mailto:egresados@intep.edu.co" style="font-size: 14px;
+          text-decoration: none;" target="_blank">
+            <span class="bi bi-envelope-fill"></span>
+            egresados@intep.edu.co
+          </a>
+        </div>
+
+        <div class="col-4 col-md">
+          <h6 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                      text-decoration-line: underline;
+                      text-decoration-color: #b79f26;
+                      text-decoration-thickness: 5px;
+                      text-underline-offset: 15px;">Directorio Institucional</h6>
+          <!-- Directorio Institucional -->
+          <ul class="list-unstyled text-small mb-5">
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/directorio-institucional/" target="_blank">Presencia Institucional</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/directorio-institucional/#regionalizacion" target="_blank">Programas de Regionalización</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/directorio-administrativos/" target="_blank">Directorio Administrativos</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/directorio-docentes-de-planta/" target="_blank">Directorio Docentes de Planta</a></li>
+          </ul>
+
+          <h6 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                      text-decoration-line: underline;
+                      text-decoration-color: #b79f26;
+                      text-decoration-thickness: 5px;
+                      text-underline-offset: 15px;">Enlaces de Interés</h6>
+          <!-- Enlaces de Inteŕes -->
+          <ul class="list-unstyled text-small mb-5">
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/estatutos/" target="_blank">Estatutos</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/reglamentos/" target="_blank">Reglamentos</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/directorio/" target="_blank">Directorio</a></li>
+            <li><a class="link-secondary text-decoration-none" href="http://mail.google.com/a/intep.edu.co" target="_blank">Correo Corporativo del INTEP</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4 col-md">
+          <h6 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                      text-decoration-line: underline;
+                      text-decoration-color: #b79f26;
+                      text-decoration-thickness: 5px;
+                      text-underline-offset: 15px;">Servicios al Ciudadano</h6>
+          <!-- Servicios al Ciudadano -->
+          <ul class="list-unstyled text-small mb-5">
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/atencion-al-ciudadano/" target="_blank">Atención al Ciudadano</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/convocatorias/" target="_blank">Convocatorias</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/preguntas-frecuentes/" target="_blank">Preguntas Frecuentes</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/notificaciones-judiciales-intep/" target="_blank">Notificaciones judiciales - INTEP</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/sistemas-de-atencion-de-sugerencias-quejas-reclamos-denuncias-y-derechos-de-peticion-sqrpd/" target="_blank">SQRPD</a></li>
+            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/transparencia-y-acceso-a-la-informacion-publica/" target="_blank">Transparencia y Acceso a la Información Pública</a></li>
+          </ul>
         </div>
         
       </div>
-    </div>
-  </main>
+    </footer>
 
-    
-    <!-- Boostrap Js -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- script.js -->
-     <script src="js/script.js"></script>
+  </main>
+  
+
+  <!-- Boostrap Js -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- script.js -->
+  <!-- <script src="js/script.js"></script> -->
+  <!-- jQuery -->
+  <!-- <script src="/js/jquery-3.7.1.min.js"></script> -->
 </body>
 </html>

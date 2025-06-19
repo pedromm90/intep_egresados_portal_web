@@ -29,3 +29,20 @@ document.getElementById("agregarInput").addEventListener("click", function() {
   // Añadir el contenedor al elemento donde queremos los inputs
   document.getElementById("contenedorInputs").appendChild(contenedorInput);
 });
+
+
+// modals.html
+fetch('modal.html')
+  .then(response => response.text())
+  .then(html => {
+    // Inserta el HTML del modal en un div con id="modal-container"
+    document.getElementById('modal-container').innerHTML = html;
+
+    // Activa el modal (ejemplo con botón)
+    document.getElementById('modalPerfil').addEventListener('click', function() {
+      $('#miModal').modal('show');
+    });
+
+    // O activarlo al cargar la página
+    // $('#miModal').modal('show');
+  });

@@ -11,7 +11,7 @@
   font-size: 16px;
 }
 
-.img-login-section {
+.img-reg-section {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -34,7 +34,7 @@
   color: #b79f26;
 }
 
-/* index.html - Login */
+/* login.html*/
 .logo-login {
   max-width: 15%;
 }
@@ -45,7 +45,7 @@
   font-weight: 500;
 }
 
-.back-login:hover {
+.back-login:hover, .footer-email:hover, .footer-facebook:hover {
   text-decoration: underline !important;
   text-decoration-thickness: 3px !important;
   text-decoration-color: #b79f26 !important;
@@ -74,10 +74,40 @@
   margin-left: 1em;
 }
 
-/* pages/egresados.html */
+/* links index.html */
 .nav-link, .card-link {
   color: #000000;
   font-size: 16px;
+}
+
+/* Menú Responsive - index.html */
+.menu-nav {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #3a5885;
+  padding: 10px 8px;
+}
+
+/* Dropdown */
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: #b79f26;
+}
+
+/* Card Links - Bootstrap */
+.social-list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social-list li {
+  padding: 10px;
+  color: #717171;
+  cursor: pointer;
+  font-size: 19px;
 }
 
 /* Card Links Egresados */
@@ -125,8 +155,8 @@
 
 /* Portada principal - Edificio INTEP */
 .portada-principal {
-  background-image: linear-gradient(to top, rgba(47, 57, 199, 0.39) 0%, 
-  rgba(74, 92, 255, 0.39) 100%),
+  background-image: linear-gradient(to top, rgba(47, 57, 199, 0.7) 0%, 
+  rgba(74, 92, 255, 0.7) 100%),
   url('../img/edificio_antiguo.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,11 +166,13 @@
 /* Información de Servicios */
 .info_servicios {
   background-color: #1a2d4b;
+  padding: 0 8em 0 0;
 }
 
 /* Información de Comercios */
 .info_comercios {
   background-color: #b79f26;
+  padding: 0 0 0 8em;
 }
 
 /* Links Ver más */
@@ -159,16 +191,55 @@
 /* Footer Egresados */
 .footer-egresados {
   background-color: #1a2d4b;
-  padding: 0 18em 0 18em;
+  padding: 0 10em 0 10em;
 }
 
 /* perfiles.html */
 .portada-perfiles {
-  background-image: linear-gradient(to top, rgba(47, 57, 199, 0.39) 0%, 
-  rgba(74, 92, 255, 0.39) 100%),
+  background-image: linear-gradient(to top, rgba(47, 57, 199, 0.7) 0%, 
+  rgba(74, 92, 255, 0.7) 100%),
   url('../img/perfiles.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 450px;
+}
+
+/* Dispositivos pequeños (celulares) */
+@media (min-width: 576px) {
+  /* login, registro, forgotpass */
+  .logo-login {
+    max-width: 30%;
+  }
+
+  .col-sm-5 {
+    width: 100%;
+  }
+
+  .col-sm-7 {
+    display: none !important;
+  }
+}
+
+/* Dispositivos medianos y normales */
+@media (min-width: 992px) {
+  /* login, registro, forgotpass */
+  .col-sm-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-sm-7 {
+    display: block !important;
+  }
+
+  /* index */
+  .navbar-expand-lg {
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+  }
+
+  .nav-underline .nav-link:hover {
+    border-bottom: 10%;
+  }
 }

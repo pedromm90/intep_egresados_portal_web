@@ -17,7 +17,7 @@
     <div class="container-fluid">
       <div class="row" style="margin-top: 0px;">
 
-        <!-- Ingreso de Usuario y Contraseña -->
+        <!-- Registrar nuevo egresado -->
         <div class="col-sm-5 login-section-wrapper py-3">
           <div class="band-wrapper py-4">
             <img src="img/egresados-intep.png" alt="INTEP EGRESADOS" title="INTEP EGRESADOS" class="mx-auto d-block logo-registro">
@@ -105,18 +105,21 @@
                 </select>
               </div>
 
+              <!-- Profesión -->
               <label for="floatingInput mb-3" style="font-weight: bold;">Profesión*</label>
               <div class="form-floating mb-2">
                 <input type="text" class="form-control" id="floatingInput" placeholder="Escribe tu profesión" required>
                 <label for="floatingInput">Escribe tu profesión</label>
               </div>
 
+              <!-- Número telefónico -->
               <label for="floatingInput mb-3" style="font-weight: bold;">Número telefónico*</label>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">+57</span>
                 <input type="number" class="form-control" placeholder="Escribe tu número de contacto, fijo o celular. Ejemplo fijo: 6029999999" aria-label="Telefono" aria-describedby="basic-addon1">
               </div>
 
+              <!-- Correo electrónico -->
               <label for="floatingInput mb-3" style="font-weight: bold;">Correo electrónico*</label>
               <div class="input-group mb-3">
                 <input type="email" class="form-control" placeholder="Digita tu correo electrónico" aria-label="Email"
@@ -124,8 +127,9 @@
                 <span class="input-group-text" id="basic-addon2">@intep.edu.co</span>
               </div>
 
-              <label for="floatingInput mb-3" style="font-weight: bold;">Redes sociales</label>
-              <div class="form-floating mb-5">
+              <!-- Agregar redes sociales -->
+              <label for="floatingInput mb-2" style="font-weight: bold;">Redes sociales</label>
+              <div class="form-floating mb-4">
                 <input type="text" class="form-control mb-2" id="floatingInput" placeholder="URL de tu perfil." required>
                 <label for="floatingInput">URL de tu perfil.</label>
 
@@ -136,6 +140,14 @@
                 <div id="contenedorInputs"></div>
               </div>
 
+              <!-- Resumen de lo más destacado del egresado -->
+              <div class="mb-5">
+                <h5 style="font-weight: bold">Lo más destacado como Egresado INTEP</h5>
+                <label for="destacadoPor" class="form-label" style="font-size: 14px; color: #afa6a6; font-style: italic;">
+                  Escribe un breve resumen de lo más destacado de tu perfil de egresado <span style="font-size: 10px;">(Mínimo de 70 palabras)</span>
+                </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
               
 
               <!-- Ejemplo botón borrar - Material Icons Google -->
@@ -143,10 +155,10 @@
                 delete
               </span> -->
               
-              <a href="pages/egresados.html" class="w-100 btn btn-lg boton-ingresar mb-3" type="submit">
+              <a href="login.html" class="w-100 btn btn-lg boton-ingresar mb-3" type="submit">
                 <strong>CREAR PERFIL</strong>
               </a>
-              <a href="index.html" class="w-100 btn btn-lg boton-registrar">
+              <a href="login.html" class="w-100 btn btn-lg boton-registrar">
                 <strong>CANCELAR</strong>
               </a>
             </form>
@@ -155,7 +167,7 @@
 
         <!-- Fondo -->
         <div class="col-sm-7 px-0 d-none d-sm-block">
-          <img src="img/fondo.png" alt="Login" class="img-login-section">
+          <img src="img/fondo.png" alt="Login" class="img-reg-section">
         </div>
         
       </div>
@@ -168,6 +180,41 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <!-- script.js -->
-  <script src="js/script.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+  
+  <!-- script, registro, agregar URLs redes sociales -->
+  <script>
+    // Botón agregar Inputs, URL de redes sociales
+      document.getElementById("agregarInput").addEventListener("click", function () {
+        // Crear el elemento input
+        const nuevoInput = document.createElement("input");
+        nuevoInput.type = "text";
+        nuevoInput.className = "form-control";
+        // nuevoInput.id = "floatingInput";
+        nuevoInput.placeholder = "URL de tu perfil.";
+
+        // Crear el botón de eliminación
+        const botonEliminar = document.createElement("button");
+        const iconoEliminar = document.createElement("span");
+        botonEliminar.className = "borrar-redes";
+        // botonEliminar.className = "mt-2";
+        iconoEliminar.textContent = "delete";
+        iconoEliminar.className = "material-icons";
+        botonEliminar.onclick = function () {
+          this.parentElement.removeChild(this);
+          nuevoInput.remove();
+        };
+        // botonEliminar.textContent = "Eliminar";
+
+        // Crear un contenedor para input y botón
+        const contenedorInput = document.createElement("div");
+        contenedorInput.appendChild(nuevoInput);
+        contenedorInput.appendChild(botonEliminar);
+        botonEliminar.appendChild(iconoEliminar);
+
+        // Añadir el contenedor al elemento donde queremos los inputs
+        document.getElementById("contenedorInputs").appendChild(contenedorInput);
+      });
+  </script>
 </body>
 </html>
