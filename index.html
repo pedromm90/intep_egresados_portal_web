@@ -32,10 +32,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav nav nav-underline ms-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link active py-3 px-0" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link active py-3 px-0" aria-current="page" href="index.html">
+                <i class="bi bi-house-fill"></i>
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0" href="pages/egresados.html">
+                <i class="bi bi-people-fill"></i>
+                Nuestros egresados
+              </a>
             </li>
             <li class="nav-item dropdown mx-0 mx-lg-1">
-              <a class="nav-link dropdown-toggle py-3 px-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Portafolio comercial</a>
+              <a class="nav-link dropdown-toggle py-3 px-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                <i class="bi bi-card-list"></i>
+                Portafolio comercial
+              </a>
               <div class="dropdown-menu bg-body-tertiary">
                 <a class="dropdown-item" href="#">Servicios</a>
                 <a class="dropdown-item" href="#">Comercios</a>
@@ -65,7 +77,7 @@
       <div class="px-4 text-center">
         <h3 class="fw-bold mb-5" style="color: #fff;">Comunidad de</h3>
         <h1 class="mb-4" style="font-weight: 800; color: #fff;">Egresados INTEP</h1>
-        <img style="max-width: 8%;" src="../img/logo_intep.png" alt="Logo INTEP">
+        <img class="logo-intep" src="../img/logo_intep.png" alt="Logo INTEP">
       </div>
     </div>
 
@@ -81,11 +93,11 @@
             text-underline-offset: 15px;">Información general</h2>
           <p class="lead" style="font-size: 20px; text-align: justify;">El Egresado del Instituto de Educación Técnica Profesional - INTEP es considerado un profesional que se caracteriza por su adaptabilidad al cambio, su constante búsqueda del conocimiento, su participación en la resolución de conflictos y se convierte en transformador de su entorno e impulsador de progreso, mejorando las condiciones de vida de la comunidad. De igual forma, constituye un componente importante dentro de la organización institucional y de la proyección con la realidad social, cultural, política, económica e histórica del país en general.</p>
         </div>
-        <div class="col-lg-6 mb-5">
+        <div class="col-lg-6 mb-2">
           <img src="../img/egresada.png"
             alt="Egresado"
-            class="d-block mx-lg-auto"
-            width="450"
+            class="d-block mx-auto"
+            width="400"
             height="550"
             loading="lazy">
         </div>
@@ -134,8 +146,247 @@
                   </ul>
                 </div>
                 <div class="buttons">
-                  <a class="btn ver-perfil w-100" href="#">Perfil completo</a>
+                  <a class="btn ver-perfil w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Perfil completo</a>
                 </div>
+
+                <!-- Modal EG 1 -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Perfil de: María Restrepo</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row gutters-sm">
+
+                          <!-- Perfil EG 1 -->
+                          <div class="col-md-4 mb-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                  <img src="../img/egresado_1.png" alt="Egresada 1" class="rounded-circle" width="150">
+                                  <div class="mt-3">
+                                    <h4>María Restrepo</h4>
+                                    <p class="text-secondary mb-1">Contadora pública</p>
+                                    <p class="text-muted font-size-sm">Roldanillo, Valle del Cauca</p>
+                                    <div class="text-center">
+                                      <a href="#" class="card-link bi bi-whatsapp">
+                                        <span style="font-size: 13px;">+57 310 000 1122</span>
+                                      </a>
+                                    
+                                      <ul class="social-list">
+                                        <li><a href="#" class="card-link bi bi-facebook"></a></li>
+                                        <li><a href="#" class="card-link bi bi-instagram"></a></li>
+                                        <li><a href="#" class="card-link bi bi-tiktok"></a></li>
+                                        <li><a href="#" class="card-link bi bi-linkedin"></a></li>
+                                      </ul>
+                                    </div>
+                                    <button class="btn modal-msj">Envía un mensaje</button>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Perfil del Egresado 1 -->
+                              <div class="card mt-3">
+                                <div class="px-4 mt-3">
+                                  <h5 class="text-center">Perfil Egresado</h5>
+                                  <p class="fonts" style="font-size: 15px; text-align: justify;">Domina normas tributarias y NIIF, elabora e interpreta
+                                    estados financieros y auditorías. Analiza datos para optimizar recursos, controlar costos y guiar la planeación
+                                    tributaria y financiera.</p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="col-md-8">
+
+                            <!-- Servicios -->
+                            <div class="card mb-3">
+                              <div class="card-body">
+                                <h6 class="mb-2">Servicios</h6>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                    Asesoría contable y tributaria
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                    Auditoría
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                    Revisoría fiscal
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                    Elaboración de estados financieros
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                    Consultoría financiera
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <!-- Productos -->
+                            <div class="card mb-3">
+                              <div class="card-body">
+                                <h6 class="mb-2">Productos</h6>
+                                <ul class="list-group list-group-flush">
+                                  <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                                    <div class="accordion-item">
+                                      <h6 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                          Certificados contables y financieros
+                                        </button>
+                                      </h6>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                          <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Dictámenes
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Certificaciones de ingresos
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Patrimonio
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Cumplimiento tributario
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h6 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          Estados financieros
+                                        </button>
+                                      </h6>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                          <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Balance general
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Estado de resultados
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Flujo de efectivo
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Informes claves
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          Informes de auditoría y revisoría fiscal
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                          <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Documentos que expresan opinión profesional sobre la razonabilidad de los estados financieros.
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h6 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                          Declaraciones tributarias
+                                        </button>
+                                      </h6>
+                                      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                          <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Elaboración y presentación de declaraciones como renta, IVA, retención en la fuente, etc.
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h6 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                          Asesorías personalizadas
+                                        </button>
+                                      </h6>
+                                      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                          <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Soluciones prácticas para emprendedores, pymes o personas naturales sobre manejo financiero, costos, estructura empresarial, etc.
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h6 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                          Planes de manejo contable y fiscal
+                                        </button>
+                                      </h6>
+                                      <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                          <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap" style="font-size: 15px">
+                                              Estrategias para optimizar la carga tributaria dentro del marco legal.
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <!-- Portafolio de servicios -->
+                            <div class="card mb-3">
+                              <div class="card-body">
+                                <h6 class="mb-2">Portafolio de servicios</h6>
+                                <div class="row">
+                                    <img src="img/portafolios/egresada1/eg1_1.png" alt="" style="width: 25%;">
+                                    <img src="img/portafolios/egresada1/eg1_2.png" alt="" style="width: 25%;">
+                                    <img src="img/portafolios/egresada1/eg1_3.png" alt="" style="width: 25%;">
+                                    <img src="img/portafolios/egresada1/eg1_4.png" alt="" style="width: 25%;">
+                                </div>
+                              </div>
+                            </div>
+
+                            </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
             </div>
 
@@ -357,8 +608,8 @@
     <!-- Servicios de egresados -->
     <div class="container-fluid my-5">
       <div class="row align-items-center g-4 pb-4 info_servicios">
-        <div class="col-lg-6">
-          <img src="../img/servicios.png" alt="Egresado" class="d-block mx-lg-auto" width="450" height="450" loading="lazy">
+        <div class="col-lg-6 col-md-6">
+          <img src="../img/servicios.png" alt="Egresado" class="d-block mx-lg-auto img_servicios" width="450" height="450" loading="lazy">
         </div>
       
         <div class="col-lg-6 mx-auto px-5">
@@ -391,7 +642,7 @@
           <a href="#" class="text-light text-decoration-none fw-semibold ver-mas-blue" style="font-size: 22px;">Ver más</a>
         </div>
         <div class="col-lg-6">
-          <img src="../img/comercios.png" alt="Egresado" class="d-block mx-lg-auto" width="450" height="450" loading="lazy">
+          <img src="../img/comercios.png" alt="Egresado" class="d-block mx-lg-auto img_comercios" width="450" height="450" loading="lazy">
         </div>
       </div>
     </div>
@@ -415,7 +666,7 @@
       <div class="container my-5">
         <div class="row mx-auto my-auto">
           <!-- Producto 1 -->
-          <div class="col-sm-4">
+          <div class="col-sm-4 mb-2">
             <div class="card h-100">
               <img src="../img/productos/prolacteos.jpg" alt="Prolacteos Roldanillo">
               <div class="card-body">
@@ -428,7 +679,7 @@
           </div>
 
            <!-- Producto 2 -->
-          <div class="col-sm-4">
+          <div class="col-sm-4 mb-2">
             <div class="card h-100">
               <img src="../img/productos/fibernet.jpg" alt="Fibernet">
               <div class="card-body">
@@ -441,7 +692,7 @@
           </div>
 
           <!-- Producto 3 -->
-          <div class="col-sm-4">
+          <div class="col-sm-4 mb-2">
             <div class="card h-100">
               <img src="../img/productos/eco132.jpg" alt="Eco - Skin Care">
               <div class="card-body">
@@ -538,6 +789,7 @@
   <!-- Boostrap Js -->
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
   <!-- script.js -->
   <!-- <script src="js/script.js"></script> -->
   <!-- jQuery -->

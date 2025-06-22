@@ -19,24 +19,31 @@
 }
 
 /* Botones */
-.boton-ingresar, .boton-registrar, .enviar-correo, .agregar-redes, .subir-foto, .agregar-redes, .boton-mas, .buscar-egresado, .ver-perfil {
+.boton-ingresar, .boton-registrar, .enviar-correo, .agregar-redes, .subir-foto, .agregar-redes, .boton-mas, .buscar-egresado, .ver-perfil, .modal-msj, .modal-cerrar {
   color: #ffffff;
   background-color: #3a5885;
 }
 
 /* Botones:hover */
-.boton-ingresar:hover, .boton-registrar:hover, .enviar-correo:hover, .subir-foto:hover, .agregar-redes:hover, .boton-mas:hover, .buscar-egresado:hover, .ver-perfil:hover {
+.boton-ingresar:hover, .boton-registrar:hover, .enviar-correo:hover, .subir-foto:hover, .agregar-redes:hover, .boton-mas:hover, .buscar-egresado:hover, .ver-perfil:hover, .modal-msj:hover, .modal-cerrar:hover {
   color: #ffffff;
   background-color: #b79f26;
-}
-
-.forgot-pass:hover, .data-policies:hover  {
-  color: #b79f26;
 }
 
 /* login.html*/
 .logo-login {
   max-width: 15%;
+}
+
+.forgot-pass, .data-policies {
+  color: #000000;
+  font-size: 16px;
+}
+
+.forgot-pass:hover, .data-policies:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: #b79f26 !important;
 }
 
 /* forgotpass.html - Olvidé mi contraseña */
@@ -194,7 +201,7 @@
   padding: 0 10em 0 10em;
 }
 
-/* perfiles.html */
+/* egresados.html */
 .portada-perfiles {
   background-image: linear-gradient(to top, rgba(47, 57, 199, 0.7) 0%, 
   rgba(74, 92, 255, 0.7) 100%),
@@ -203,22 +210,6 @@
   background-size: cover;
   background-position: center;
   height: 450px;
-}
-
-/* Dispositivos pequeños (celulares) */
-@media (min-width: 576px) {
-  /* login, registro, forgotpass */
-  .logo-login {
-    max-width: 30%;
-  }
-
-  .col-sm-5 {
-    width: 100%;
-  }
-
-  .col-sm-7 {
-    display: none !important;
-  }
 }
 
 /* Dispositivos medianos y normales */
@@ -234,6 +225,10 @@
   }
 
   /* index */
+  h2 {
+    text-align: start !important;
+  }
+
   .navbar-expand-lg {
     flex-wrap: nowrap !important;
     justify-content: flex-start !important;
@@ -243,3 +238,76 @@
     border-bottom: 10%;
   }
 }
+
+/* Dispositivos medianos y normales */
+@media (min-width: 768px) {
+  /* .col-sm-4 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  } */
+
+  /* .col-sm-5, .col-sm-4 {
+    width: 75%;
+  } */
+}
+
+/* Dispositivos pequeños (celulares) */
+@media (min-width: 576px) {
+  h2 {
+    text-align: center;
+  }
+
+  /* login, registro, forgotpass */
+  .logo-login {
+    max-width: 30%;
+  }
+
+  .logo-intep {
+    width: 8%;
+  }
+
+  /* .col-sm-5, .col-sm-4 {
+    width: 100%;
+  } */
+
+  /* .col-sm-7 {
+    display: none !important;
+  } */
+
+  /* index.html */
+  .img_servicios, .img_comercios {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .info_servicios, .info_comercios {
+    padding: 0;
+  }
+
+  .footer-egresados {
+    margin: 0 auto;
+    padding: 0
+  }
+}
+
+/* Dispositivos más pequeños */
+@media (min-width: 320px) and (max-width: 575.98px) {
+  h2 {
+    text-align: center;
+  }
+
+  /* index.html */
+  .logo-intep {
+    width: 22%;
+  }
+
+  .img_servicios, .img_comercios {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .info_servicios, .info_comercios {
+    padding: 0;
+  }
+}
+
