@@ -7,70 +7,70 @@
     <link rel="shortcut icon" href="img/egresados-intep.jpg" type="image/x-icon">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Estilos propios -->
     <link rel="stylesheet" href="css/estilos.css">
-    <!-- Google Material Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
   
   <main>
-
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="mainNav">
-      <div class="container-fluid mx-5">
-        <a href="#" class="navbar-brand justify-content-start">
-          <img src="img/egresados-intep.png" alt="Logo Egresados" width="80" height="80" class="d-inline-block align-text-top">
-        </a>
-        <!-- navbar-toggler para el menú responsive -->
-        <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded menu-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="bi bi-list"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav nav nav-underline ms-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link active py-3 px-0" aria-current="page" href="index.html">
-                <i class="bi bi-house-fill"></i>
-                Inicio
-              </a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0" href="pages/egresados.html">
-                <i class="bi bi-people-fill"></i>
-                Nuestros egresados
-              </a>
-            </li>
-            <li class="nav-item dropdown mx-0 mx-lg-1">
-              <a class="nav-link dropdown-toggle py-3 px-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                <i class="bi bi-card-list"></i>
-                Portafolio comercial
-              </a>
-              <div class="dropdown-menu bg-body-tertiary">
-                <a class="dropdown-item" href="#">Servicios</a>
-                <a class="dropdown-item" href="#">Comercios</a>
-                <a class="dropdown-item" href="#">Emprendimientos</a>
-                <a class="dropdown-item" href="#">Productos</a>
-              </div>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0" href="login.html">
-                <i class="bi bi-person-fill"></i>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../img/egresados-intep.png" alt="Logo Egresados INTEP">
+      </a>
+      <!-- navbar-toggler para el menú responsive -->
+      <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded menu-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav nav nav-underline ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <i class="bi bi-house-fill"></i>
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/egresados.html">
+              <i class="bi bi-people-fill"></i>
+              Nuestros egresados
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-card-list"></i>
+              Portafolio comercial
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+              <li><a class="dropdown-item" aria-current="page" href="pages/servicios.html">Servicios</a></li>
+              <li><a class="dropdown-item" href="pages/comercios.html">Comercios</a></li>
+              <li><a class="dropdown-item" href="pages/emprendimientos.html">Emprendimientos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="pages/productos.html">Productos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mb-1">
+            <a class="btn boton-ingresar me-2" href="login.html">
+              <i class="bi bi-person-fill"></i>
                 Iniciar sesión
-              </a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0" href="registro.html">
-                <i class="bi bi-person-lines-fill"></i>
-                Regístrate
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn boton-registrar me-2" href="registro.html">
+              <i class="bi bi-person-lines-fill"></i>
+                  Regístrate
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <!-- Portada de la página -->
     <div class="p-4 mb-4 bg-body-secondary portada-principal">
@@ -123,12 +123,12 @@
           <div class="row mb-2">
         
             <!-- EG 1 -->
-            <div class="col-md-3 mb-2">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
               <div class="card h-100 p-2 py-3">
                 <div class="text-center">
                   <img src="../img/egresado_1.png" width="100" class="rounded-circle">
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-4">
                   <h5 class="mt-2 mb-0">María Restrepo</h5>
                   <span>Contadora pública</span>
                   <div class="px-4 mt-1">
@@ -166,7 +166,7 @@
                               <div class="card-body">
                                 <div class="d-flex flex-column align-items-center text-center">
                                   <img src="../img/egresado_1.png" alt="Egresada 1" class="rounded-circle" width="150">
-                                  <div class="mt-3">
+                                  <div class="mt-4">
                                     <h4>María Restrepo</h4>
                                     <p class="text-secondary mb-1">Contadora pública</p>
                                     <p class="text-muted font-size-sm">Roldanillo, Valle del Cauca</p>
@@ -188,8 +188,8 @@
                               </div>
 
                               <!-- Perfil del Egresado 1 -->
-                              <div class="card mt-3">
-                                <div class="px-4 mt-3">
+                              <div class="card mt-4">
+                                <div class="px-4 mt-4">
                                   <h5 class="text-center">Perfil Egresado</h5>
                                   <p class="fonts" style="font-size: 15px; text-align: justify;">Domina normas tributarias y NIIF, elabora e interpreta
                                     estados financieros y auditorías. Analiza datos para optimizar recursos, controlar costos y guiar la planeación
@@ -391,12 +391,12 @@
             </div>
 
             <!-- EG 2 -->
-            <div class="col-md-3 mb-2">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
               <div class="card h-100 p-2 py-3">
                 <div class="text-center">
                   <img src="../img/egresado_2.png" width="100" class="rounded-circle">
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-4">
                   <h5 class="mt-2 mb-0">José Perea</h5>
                   <span>Tecnólogo de Sistemas Informáticos</span>
                   <div class="px-4 mt-1">
@@ -420,12 +420,12 @@
             </div>
 
             <!-- EG 3 -->
-            <div class="col-md-3 mb-2">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
               <div class="card h-100 p-2 py-3">
                 <div class="text-center">
                   <img src="../img/egresado_3.png" width="100" class="rounded-circle">
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-4">
                   <h5 class="mt-2 mb-0">Daniel Agudelo</h5>
                   <span>Profesional en Agroindustria</span>
                   <div class="px-4 mt-1">
@@ -449,12 +449,12 @@
             </div>
 
             <!-- EG 4 -->
-            <div class="col-md-3 mb-2">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
               <div class="card h-100 p-2 py-3">
                 <div class="text-center">
                   <img src="../img/pedro.png" width="100" class="rounded-circle">
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-4">
                   <h5 class="mt-2 mb-0">Pedro Muñeton</h5>
                   <span>Técnico en Sistemas</span>
                   <div class="px-4 mt-1">
@@ -483,12 +483,12 @@
           <div class="row">
         
             <!-- EG 5 -->
-            <div class="col-md-3 mb-2">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
               <div class="card h-100 p-2 py-3">
                 <div class="text-center">
                   <img src="../img/egresado_5.png" width="100" class="rounded-circle">
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-4">
                   <h5 class="mt-2 mb-0">Luis Velez</h5>
                   <span>Técnico en Producción Agrícola</span>
                   <div class="px-4 mt-1">
@@ -512,12 +512,12 @@
             </div>
 
             <!-- EG 6 -->
-            <div class="col-md-3 mb-2">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
               <div class="card h-100 p-2 py-3">
                 <div class="text-center">
                   <img src="../img/egresado_6.png" width="100" class="rounded-circle">
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-4">
                   <h5 class="mt-2 mb-0">Jenny Ruiz</h5>
                   <span>Administración de Empresas</span>
                   <div class="px-4 mt-1">
@@ -541,12 +541,12 @@
             </div>
 
             <!-- EG 7 -->
-            <div class="col-md-3 mb-2">
+            <div class="col-12 col-md-6 col-lg-3">
               <div class="card h-100 p-2 py-3">
                 <div class="text-center">
                   <img src="../img/egresado_7.png" width="100" class="rounded-circle">
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-4">
                   <h5 class="mt-2 mb-0">Daniela Jimenez</h5>
                   <span>Técnica en Producción Gráfica</span>
                   <div class="px-4 mt-1">
@@ -570,12 +570,12 @@
             </div>
 
             <!-- EG 8 -->
-            <div class="col-md-3">
+            <div class="col-12 col-md-6 col-lg-3">
               <div class="card h-100 p-2 py-3">
                 <div class="text-center">
                   <img src="../img/egresado_8.png" width="100" class="rounded-circle">
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-4">
                   <h5 class="mt-2 mb-0">Julieta Bonilla</h5>
                   <span>Tecnóloga en Gestión Contable</span>
                   <div class="px-4 mt-1">
@@ -710,76 +710,72 @@
     </div>
 
     <!-- Footer de la página -->
-    <footer class="container-fluid pt-5 border-top footer-egresados">
-      <div class="row">
-
-        <div class="col-4 col-md px-5">
-          <img src="../img/egresados_blanco.png" alt="Egresados INTEP" width="70" height="70">
-          <br /><br />
-          <p class="text-light fw-semibold">Instituto de Educación Técnica Profesional (INTEP)</p>
-          <p class="text-light fw-semibold">Apoyo al Egresado</p>
-          <span class="text-light">
-            Calle 10 # 6 - 21 <br>
-            Roldanillo, Valle del Cauca, <br>
-            Colombia <br><br>
-          </span>
-          <a class="text-light fw-semibold footer-facebook" href="https://www.facebook.com/intepegresados" style="font-size: 14px; text-decoration: none;" target="_blank">
-            <span class="bi bi-facebook"></span>
-            Egresados - INTEP
-          </a>
-          <br>
-          <a class="text-light fw-semibold lh-1 footer-email" href="mailto:egresados@intep.edu.co" style="font-size: 14px;
-          text-decoration: none;" target="_blank">
-            <span class="bi bi-envelope-fill"></span>
-            egresados@intep.edu.co
-          </a>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <h5>Apoyo al Egresado</h5>
+            <p class="small">Oficina de Egresados INTEP, Roldanillo (Valle del Cauca), Colombia</p>
+            <p class="small">
+              <a href="https://www.facebook.com/intepegresados" target="_blank"><i
+                  class="fab fa-facebook-f me-2"></i>Facebook</a><br>
+              <a href="mailto:egresados@intep.edu.co"><i class="fas fa-envelope me-2"></i>egresados@intep.edu.co</a>
+            </p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h5 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                          text-decoration-line: underline;
+                          text-decoration-color: #b79f26;
+                          text-decoration-thickness: 3px;
+                          text-underline-offset: 15px;">Directorio Institucional</h5>
+            <ul class="list-unstyled">
+              <li><a href="https://intep.edu.co/portal/directorio-institucional/" target="_blank">Presencia
+                  Institucional</a></li>
+              <li><a href="https://intep.edu.co/portal/directorio-institucional/#regionalizacion" target="_blank">Programas
+                  de Regionalización</a></li>
+              <li><a href="https://intep.edu.co/portal/directorio-administrativos/" target="_blank">Directorio
+                  Administrativos</a></li>
+              <li><a href="https://intep.edu.co/portal/directorio-docentes-de-planta/" target="_blank">Directorio Docentes
+                  de Planta</a></li>
+            </ul>
+            <br>
+            <h5 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                          text-decoration-line: underline;
+                          text-decoration-color: #b79f26;
+                          text-decoration-thickness: 3px;
+                          text-underline-offset: 15px;">Enlaces de Interés</h5>
+            <ul class="list-unstyled">
+              <li><a href="https://intep.edu.co/portal/estatutos/" target="_blank">Estatutos</a></li>
+              <li><a href="https://intep.edu.co/portal/reglamentos/" target="_blank">Reglamentos</a></li>
+              <li><a href="https://intep.edu.co/portal/directorio/" target="_blank">Directorio</a></li>
+              <li><a href="http://mail.google.com/a/intep.edu.co" target="_blank">Correo Corporativo del INTEP</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h5 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                          text-decoration-line: underline;
+                          text-decoration-color: #b79f26;
+                          text-decoration-thickness: 3px;
+                          text-underline-offset: 15px;">Servicios al Ciudadano</h5>
+            <ul class="list-unstyled">
+              <li><a href="https://intep.edu.co/portal/atencion-al-ciudadano/" target="_blank">Atención al Ciudadano</a>
+              </li>
+              <li><a href="https://intep.edu.co/portal/convocatorias/" target="_blank">Convocatorias</a></li>
+              <li><a href="https://intep.edu.co/portal/preguntas-frecuentes/" target="_blank">Preguntas Frecuentes</a></li>
+              <li><a href="https://intep.edu.co/portal/notificaciones-judiciales-intep/" target="_blank">Notificaciones
+                  judiciales - INTEP</a></li>
+              <li><a
+                  href="https://intep.edu.co/portal/sistemas-de-atencion-de-sugerencias-quejas-reclamos-denuncias-y-derechos-de-peticion-sqrpd/"
+                  target="_blank">SQRPD</a></li>
+              <li><a href="https://intep.edu.co/portal/transparencia-y-acceso-a-la-informacion-publica/"
+                  target="_blank">Transparencia y Acceso a la Información Pública</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3 text-md-end">
+            <img src="../img/egresados_blanco.png" alt="Logo INTEP" style="height: 60px;">
+            <p class="small mt-2">&copy; 2025 Egresados INTEP. Todos los derechos reservados.</p>
+          </div>
         </div>
-
-        <div class="col-4 col-md">
-          <h6 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
-                      text-decoration-line: underline;
-                      text-decoration-color: #b79f26;
-                      text-decoration-thickness: 5px;
-                      text-underline-offset: 15px;">Directorio Institucional</h6>
-          <!-- Directorio Institucional -->
-          <ul class="list-unstyled text-small mb-5">
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/directorio-institucional/" target="_blank">Presencia Institucional</a></li>
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/directorio-institucional/#regionalizacion" target="_blank">Programas de Regionalización</a></li>
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/directorio-administrativos/" target="_blank">Directorio Administrativos</a></li>
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/directorio-docentes-de-planta/" target="_blank">Directorio Docentes de Planta</a></li>
-          </ul>
-
-          <h6 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
-                      text-decoration-line: underline;
-                      text-decoration-color: #b79f26;
-                      text-decoration-thickness: 5px;
-                      text-underline-offset: 15px;">Enlaces de Interés</h6>
-          <!-- Enlaces de Inteŕes -->
-          <ul class="list-unstyled text-small mb-5">
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/estatutos/" target="_blank">Estatutos</a></li>
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/reglamentos/" target="_blank">Reglamentos</a></li>
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/directorio/" target="_blank">Directorio</a></li>
-            <li><a class="link-secondary text-decoration-none" href="http://mail.google.com/a/intep.edu.co" target="_blank">Correo Corporativo del INTEP</a></li>
-          </ul>
-        </div>
-
-        <div class="col-4 col-md">
-          <h6 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
-                      text-decoration-line: underline;
-                      text-decoration-color: #b79f26;
-                      text-decoration-thickness: 5px;
-                      text-underline-offset: 15px;">Servicios al Ciudadano</h6>
-          <!-- Servicios al Ciudadano -->
-          <ul class="list-unstyled text-small mb-5">
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/atencion-al-ciudadano/" target="_blank">Atención al Ciudadano</a></li>
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/convocatorias/" target="_blank">Convocatorias</a></li>
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/preguntas-frecuentes/" target="_blank">Preguntas Frecuentes</a></li>
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/notificaciones-judiciales-intep/" target="_blank">Notificaciones judiciales - INTEP</a></li>
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/sistemas-de-atencion-de-sugerencias-quejas-reclamos-denuncias-y-derechos-de-peticion-sqrpd/" target="_blank">SQRPD</a></li>
-            <li><a class="link-secondary text-decoration-none" href="https://intep.edu.co/portal/transparencia-y-acceso-a-la-informacion-publica/" target="_blank">Transparencia y Acceso a la Información Pública</a></li>
-          </ul>
-        </div>
-        
       </div>
     </footer>
 

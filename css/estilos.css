@@ -6,9 +6,38 @@
   font-family: 'Material Icons' !important;
 }
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 13px;
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: 'Poppins' !important;
-  font-size: 16px;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, .h1 {
+  font-size: clamp(3rem, 3vw, 5rem) !important; 
+}
+
+h2, .h2 {
+  font-size: clamp(1rem, 4vw, 2rem) !important;
+}
+
+.card {
+  padding: 1rem;
 }
 
 .img-reg-section {
@@ -81,10 +110,16 @@
   margin-left: 1em;
 }
 
-/* links index.html */
+/* index.html */
+/* Links */
 .nav-link, .card-link {
   color: #000000;
-  font-size: 16px;
+  /* font-size: 16px; */
+}
+
+/* Logo Egresados INTEP */
+.navbar-brand img {
+  height: 50px;
 }
 
 /* Menú Responsive - index.html */
@@ -143,9 +178,9 @@
 }
 
 /* Barra buscar */
-.barra-buscar {
+/* .barra-buscar {
   width: 15%;
-}
+} */
 
 /* Botones Iniciar sesión y Registrate */
 .boton-login, .boton-signup {
@@ -196,10 +231,28 @@
 }
 
 /* Footer Egresados */
-.footer-egresados {
-  background-color: #1a2d4b;
-  padding: 0 10em 0 10em;
+.card-footer {
+  background-color: #f8f9fa;
 }
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* .footer-egresados {
+  background-color: #1a2d4b;
+} */
 
 /* egresados.html */
 .portada-perfiles {
@@ -209,7 +262,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 450px;
+  height: 350px;
+}
+
+/* servicios.html */
+.portada-servicios {
+  background: linear-gradient(to top, rgba(47, 57, 199, 0.7) 0%,
+  rgba(74, 92, 255, 0.7) 100%), url('../img/servicios-profesionales.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 6rem 0;
+  text-align: center;
+  height: 350px;
 }
 
 /* Dispositivos medianos y normales */
@@ -241,6 +305,12 @@
 
 /* Dispositivos medianos y normales */
 @media (min-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  
+
   /* .col-sm-4 {
     flex: 0 0 auto;
     width: 41.66666667%;
@@ -253,6 +323,10 @@
 
 /* Dispositivos pequeños (celulares) */
 @media (min-width: 576px) {
+  .nav-underline .nav-link, .nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    max-width: max-content;
+  }
+
   h2 {
     text-align: center;
   }
@@ -299,6 +373,10 @@
   /* index.html */
   .logo-intep {
     width: 22%;
+  }
+
+  .nav-underline .nav-link, .nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    max-width: max-content;
   }
 
   .img_servicios, .img_comercios {

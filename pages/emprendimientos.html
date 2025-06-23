@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emprendimientos - Egresados INTEP</title>
+  <link rel="shortcut icon" href="../img/egresados-intep.jpg" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <style>
+    .hero-section {
+      background: linear-gradient(rgba(0, 86, 156, 0.8), rgba(0, 86, 156, 0.8)), url('https://via.placeholder.com/1920x400.png?text=Campus+INTEP') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 6rem 0;
+      text-align: center;
+    }
+    .category-title {
+      color: #003366; /* Azul oscuro institucional */
+      border-bottom: 2px solid #005a9c;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .service-card {
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      border: 1px solid #e0e0e0;
+      height: 100%; /* Asegura que todas las tarjetas en una fila tengan la misma altura */
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+    .card-footer {
+      background-color: #f8f9fa;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 3rem 0;
+    }
+    .footer a {
+      color: #adb5bd;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../img/egresados-intep.png" alt="Logo Egresados INTEP">
+      </a>
+      <!-- navbar-toggler para el menú responsive -->
+      <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded menu-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav nav nav-underline ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+              <i class="bi bi-house-fill"></i>
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="egresados.html">
+              <i class="bi bi-people-fill"></i>
+              Nuestros egresados
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-card-list"></i>
+              Portafolio comercial
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+              <li><a class="dropdown-item" aria-current="page" href="servicios.html">Servicios</a></li>
+              <li><a class="dropdown-item" href="comercios.html">Comercios</a></li>
+              <li><a class="dropdown-item" href="emprendimientos.html">Emprendimientos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="productos.html">Productos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mb-1">
+            <a class="btn boton-ingresar me-2" href="../login.html">
+              <i class="bi bi-person-fill"></i>
+                Iniciar sesión
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn boton-registrar me-2" href="../registro.html">
+              <i class="bi bi-person-lines-fill"></i>
+                  Regístrate
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero-section">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Emprendimientos de Egresados</h1>
+        <p class="lead">Descubre las ideas innovadoras y los proyectos empresariales liderados por nuestros talentosos
+          egresados del INTEP.</p>
+      </div>
+    </header>
+
+    <div class="container py-5">
+    
+      <div class="row g-4">
+    
+        <div class="col-md-6 col-lg-4">
+          <div class="card emprendimiento-card shadow-sm">
+            <img
+              src="https://www.garbeoo.com/wp-content/uploads/2024/10/LOGO-PROLACTEOS-ROLDANILLO-300x300.jpg"
+              class="card-img-top" alt="Logo de Prolacteos Roldanillo">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Prolacteos Roldanillo</h5>
+              <p class="card-text small text-muted">Emprendimiento dedicado a la producción y comercialización de productos
+                lácteos artesanales de alta calidad en Roldanillo.</p>
+              <hr>
+              <p class="card-text"><i class="fa-solid fa-user-tie me-2"></i><strong>Fundador:</strong> Daniel Agudelo</p>
+            </div>
+            <div class="card-footer bg-white border-0 py-3">
+              <div class="d-grid gap-2">
+                <a href="#" class="btn btn-outline-primary btn-sm"><i class="fas fa-globe me-2"></i>Sitio Web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-4">
+          <div class="card emprendimiento-card shadow-sm">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcRkxZa8LL_F5ryayuPIgEYbmecNpluxXR8g&s"
+              class="card-img-top" alt="Logo de Fibernet ISP">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Fibernet ISP</h5>
+              <p class="card-text small text-muted">Proveedor local de servicios de internet de alta velocidad a través de
+                fibra óptica, comprometido con la conectividad en la región.</p>
+              <hr>
+              <p class="card-text"><i class="fa-solid fa-user-tie me-2"></i><strong>Fundador:</strong> José Perea</p>
+            </div>
+            <div class="card-footer bg-white border-0 py-3">
+              <div class="d-grid gap-2">
+                <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-facebook-square me-2"></i>Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-4">
+          <div class="card emprendimiento-card shadow-sm">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6sFdhk_SJlauaR_s5qn9x0cFendqXh2iM4KDX4haVJBvBt20JtL7NmVRM1f3BIkn_UkalWHhN8WdQZ5FryiAdw5ak_k6a1OOlu8FmuOkzt2GFPs9VElKjQL72ARLvnhVFl6894WIMv1lQ48XowA5BTOKs_SQSDoHBGlBG8Dsp-MW9FdIzlETg8byGMw/s1172/logo.png"
+              class="card-img-top" alt="Soluciones Remotas">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Soluciones Remotas</h5>
+              <p class="card-text small text-muted">
+                Es un servicio de mantenimiento técnico remoto con fines educativos y de emprendimiento. Ayudará en cualquier requerimiento y consulta, y en él encontrará los servicios que hay disponibles a precios accesibles.
+              </p>
+              <hr>
+              <p class="card-text"><i class="fa-solid fa-user-tie me-2"></i><strong>Fundador:</strong> Pedro Muñeton
+              </p>
+            </div>
+            <div class="card-footer bg-white border-0 py-3">
+              <div class="d-grid gap-2">
+                <a href="#" class="btn btn-outline-primary btn-sm"><i class="fas fa-envelope me-2"></i>Contactar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <h5>Apoyo al Egresado</h5>
+          <p class="small">Oficina de Egresados INTEP, Roldanillo (Valle del Cauca), Colombia</p>
+          <p class="small">
+            <a href="https://www.facebook.com/intepegresados" target="_blank"><i
+                class="fab fa-facebook-f me-2"></i>Facebook</a><br>
+            <a href="mailto:egresados@intep.edu.co"><i class="fas fa-envelope me-2"></i>egresados@intep.edu.co</a>
+          </p>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                        text-decoration-line: underline;
+                        text-decoration-color: #b79f26;
+                        text-decoration-thickness: 3px;
+                        text-underline-offset: 15px;">Directorio Institucional</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://intep.edu.co/portal/directorio-institucional/" target="_blank">Presencia
+                Institucional</a></li>
+            <li><a href="https://intep.edu.co/portal/directorio-institucional/#regionalizacion" target="_blank">Programas
+                de Regionalización</a></li>
+            <li><a href="https://intep.edu.co/portal/directorio-administrativos/" target="_blank">Directorio
+                Administrativos</a></li>
+            <li><a href="https://intep.edu.co/portal/directorio-docentes-de-planta/" target="_blank">Directorio Docentes
+                de Planta</a></li>
+          </ul>
+          <br>
+          <h5 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                        text-decoration-line: underline;
+                        text-decoration-color: #b79f26;
+                        text-decoration-thickness: 3px;
+                        text-underline-offset: 15px;">Enlaces de Interés</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://intep.edu.co/portal/estatutos/" target="_blank">Estatutos</a></li>
+            <li><a href="https://intep.edu.co/portal/reglamentos/" target="_blank">Reglamentos</a></li>
+            <li><a href="https://intep.edu.co/portal/directorio/" target="_blank">Directorio</a></li>
+            <li><a href="http://mail.google.com/a/intep.edu.co" target="_blank">Correo Corporativo del INTEP</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                        text-decoration-line: underline;
+                        text-decoration-color: #b79f26;
+                        text-decoration-thickness: 3px;
+                        text-underline-offset: 15px;">Servicios al Ciudadano</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://intep.edu.co/portal/atencion-al-ciudadano/" target="_blank">Atención al Ciudadano</a>
+            </li>
+            <li><a href="https://intep.edu.co/portal/convocatorias/" target="_blank">Convocatorias</a></li>
+            <li><a href="https://intep.edu.co/portal/preguntas-frecuentes/" target="_blank">Preguntas Frecuentes</a></li>
+            <li><a href="https://intep.edu.co/portal/notificaciones-judiciales-intep/" target="_blank">Notificaciones
+                judiciales - INTEP</a></li>
+            <li><a
+                href="https://intep.edu.co/portal/sistemas-de-atencion-de-sugerencias-quejas-reclamos-denuncias-y-derechos-de-peticion-sqrpd/"
+                target="_blank">SQRPD</a></li>
+            <li><a href="https://intep.edu.co/portal/transparencia-y-acceso-a-la-informacion-publica/"
+                target="_blank">Transparencia y Acceso a la Información Pública</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3 text-md-end">
+          <img src="../img/egresados_blanco.png" alt="Logo INTEP" style="height: 60px;">
+          <p class="small mt-2">&copy; 2025 Egresados INTEP. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>

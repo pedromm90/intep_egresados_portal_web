@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Profesionales - Egresados INTEP</title>
+  <link rel="shortcut icon" href="../img/egresados-intep.jpg" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <style>
+    .category-title {
+      color: #003366; /* Azul oscuro institucional */
+      border-bottom: 2px solid #005a9c;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .service-card {
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      border: 1px solid #e0e0e0;
+      height: 100%; /* Asegura que todas las tarjetas en una fila tengan la misma altura */
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../img/egresados-intep.png" alt="Logo Egresados INTEP">
+      </a>
+      <!-- navbar-toggler para el menú responsive -->
+      <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded menu-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav nav nav-underline ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+              <i class="bi bi-house-fill"></i>
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="egresados.html">
+              <i class="bi bi-people-fill"></i>
+              Nuestros egresados
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-card-list"></i>
+              Portafolio comercial
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+              <li><a class="dropdown-item" aria-current="page" href="servicios.html">Servicios</a></li>
+              <li><a class="dropdown-item" href="comercios.html">Comercios</a></li>
+              <li><a class="dropdown-item" href="emprendimientos.html">Emprendimientos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="productos.html">Productos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mb-1">
+            <a class="btn boton-ingresar me-2" href="../login.html">
+              <i class="bi bi-person-fill"></i>
+                Iniciar sesión
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn boton-registrar me-2" href="../registro.html">
+              <i class="bi bi-person-lines-fill"></i>
+                  Regístrate
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero-section portada-servicios">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Servicios Profesionales</h1>
+        <p class="lead">Descubre la gama de servicios de alta calidad ofrecidos por la talentosa comunidad de egresados del INTEP.</p>
+      </div>
+    </header>
+
+    <div class="container py-5">
+      
+      <section id="tecnologia" class="mb-5">
+        <h2 class="category-title"><i class="fas fa-laptop-code me-2"></i>Tecnología y Sistemas</h2>
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <div class="card-img-container mb-3">
+                  <img src="https://images.unsplash.com/photo-1554306274-f23873d9a26c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top" alt="Desarrollo de Software a Medida">
+                </div>
+                <h5 class="card-title fw-bold text-primary">Desarrollo de Software a Medida</h5>
+                <p class="card-text">Soluciones de software personalizadas para optimizar los procesos de tu negocio. Desde aplicaciones de escritorio hasta sistemas web complejos.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ofrecido por: <strong>José Perea (Tecnólogo de Sistemas)</strong></small>
+                <a href="#" class="btn btn-sm btn-outline-primary float-end">Contactar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <div class="card-img-container mb-3">
+                  <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top" alt="Soporte Técnico y Mantenimiento">
+                </div>
+                <h5 class="card-title fw-bold text-primary">Soporte Técnico y Mantenimiento</h5>
+                <p class="card-text">Servicio de mantenimiento preventivo y correctivo para equipos de cómputo, redes y servidores. Asegura la continuidad de tus operaciones.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ofrecido por: <strong>Pedro Muñeton (Técnico en Sistemas)</strong></small>
+                <a href="#" class="btn btn-sm btn-outline-primary float-end">Ver Perfil</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <div class="card-img-container mb-3">
+                  <img src="https://images.unsplash.com/photo-1548544027-1a96c4c24c7a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top" alt="Mantenimiento a Servidores">
+                </div>
+                <h5 class="card-title fw-bold text-primary">Mantenimiento a Servidores</h5>
+                <p class="card-text">Servicio de mantenimiento a servidores para la adecuación y buen funcionamiento de aplicaciones web, para pequeñas y medianas empresas.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ofrecido por: <strong>José Perea (Tecnólogo de Sistemas)</strong></small>
+                <a href="#" class="btn btn-sm btn-outline-primary float-end">Ver Perfil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contabilidad" class="mb-5">
+        <h2 class="category-title"><i class="fas fa-calculator me-2"></i>Servicios Contables y Administrativos</h2>
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <div class="card-img-container mb-3">
+                    <img src="https://images.unsplash.com/photo-1649209979970-f01d950cc5ed?q=80&w=741&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top" alt="Asesoría Contable y Tributaria">
+                  </div>
+                <h5 class="card-title fw-bold text-primary">Asesoría Contable y Tributaria</h5>
+                <p class="card-text">Declaraciones de renta, gestión de impuestos y consultoría financiera para personas naturales y empresas. Mantén tus finanzas en orden.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ofrecido por: <strong>María Restrepo (Contadora Pública)</strong></small>
+                <a href="#" class="btn btn-sm btn-outline-primary float-end">Contactar</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <div class="card-img-container mb-3">
+                  <img src="https://images.unsplash.com/photo-1606733775222-919fb64b7d02?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top" alt="Gestión Administrativa">
+                </div>
+                <h5 class="card-title fw-bold text-primary">Gestión Administrativa</h5>
+                <p class="card-text">Optimización de procesos administrativos, gestión de nómina y consultoría en organización empresarial para mejorar la eficiencia de tu compañía.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ofrecido por: <strong>Jenny Ruiz (Administración de Empresas)</strong></small>
+                <a href="#" class="btn btn-sm btn-outline-primary float-end">Ver Perfil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="agroindustria" class="mb-5">
+        <h2 class="category-title"><i class="fas fa-seedling me-2"></i>Agroindustria y Producción Agrícola</h2>
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body">
+                <div class="card-img-container mb-3">
+                  <img src="https://i0.wp.com/perspectiva.practia.global/wp-content/uploads/2021/04/mujer-sosteniendo-tableta-junto-campo-agricola-espacio-copia-scaled.jpg?fit=2560%2C1920&ssl=1"
+                    class="card-img-top" alt="Consultoría en Proyectos Agroindustriales">
+                </div>
+                <h5 class="card-title fw-bold text-primary">Consultoría en Proyectos Agroindustriales</h5>
+                <p class="card-text">Asesoramiento integral para la formulación, evaluación y ejecución de proyectos productivos en el sector agroindustrial y de alimentos.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Ofrecido por: <strong>Daniel Agudelo (Profesional en Agroindustria)</strong></small>
+                <a href="#" class="btn btn-sm btn-outline-primary float-end">Contactar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <h5>Apoyo al Egresado</h5>
+          <p class="small">Oficina de Egresados INTEP, Roldanillo (Valle del Cauca), Colombia</p>
+          <p class="small">
+            <a href="https://www.facebook.com/intepegresados" target="_blank"><i class="fab fa-facebook-f me-2"></i>Facebook</a><br>
+            <a href="mailto:egresados@intep.edu.co"><i class="fas fa-envelope me-2"></i>egresados@intep.edu.co</a>
+          </p>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                      text-decoration-line: underline;
+                      text-decoration-color: #b79f26;
+                      text-decoration-thickness: 3px;
+                      text-underline-offset: 15px;">Directorio Institucional</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://intep.edu.co/portal/directorio-institucional/" target="_blank">Presencia Institucional</a></li>
+            <li><a href="https://intep.edu.co/portal/directorio-institucional/#regionalizacion" target="_blank">Programas de Regionalización</a></li>
+            <li><a href="https://intep.edu.co/portal/directorio-administrativos/" target="_blank">Directorio Administrativos</a></li>
+            <li><a href="https://intep.edu.co/portal/directorio-docentes-de-planta/" target="_blank">Directorio Docentes de Planta</a></li>
+          </ul>
+          <br>
+          <h5 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                      text-decoration-line: underline;
+                      text-decoration-color: #b79f26;
+                      text-decoration-thickness: 3px;
+                      text-underline-offset: 15px;">Enlaces de Interés</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://intep.edu.co/portal/estatutos/" target="_blank">Estatutos</a></li>
+            <li><a href="https://intep.edu.co/portal/reglamentos/" target="_blank">Reglamentos</a></li>
+            <li><a href="https://intep.edu.co/portal/directorio/" target="_blank">Directorio</a></li>
+            <li><a href="http://mail.google.com/a/intep.edu.co" target="_blank">Correo Corporativo del INTEP</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="text-body-emphasis lh-1 mb-4" style="color: #fff !important;
+                      text-decoration-line: underline;
+                      text-decoration-color: #b79f26;
+                      text-decoration-thickness: 3px;
+                      text-underline-offset: 15px;">Servicios al Ciudadano</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://intep.edu.co/portal/atencion-al-ciudadano/" target="_blank">Atención al Ciudadano</a></li>
+            <li><a href="https://intep.edu.co/portal/convocatorias/" target="_blank">Convocatorias</a></li>
+            <li><a href="https://intep.edu.co/portal/preguntas-frecuentes/" target="_blank">Preguntas Frecuentes</a></li>
+            <li><a href="https://intep.edu.co/portal/notificaciones-judiciales-intep/" target="_blank">Notificaciones judiciales - INTEP</a></li>
+            <li><a href="https://intep.edu.co/portal/sistemas-de-atencion-de-sugerencias-quejas-reclamos-denuncias-y-derechos-de-peticion-sqrpd/" target="_blank">SQRPD</a></li>
+            <li><a href="https://intep.edu.co/portal/transparencia-y-acceso-a-la-informacion-publica/" target="_blank">Transparencia y Acceso a la Información Pública</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3 text-md-end">
+          <img src="../img/egresados_blanco.png" alt="Logo INTEP" style="height: 60px;">
+          <p class="small mt-2">&copy; 2025 Egresados INTEP. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>
