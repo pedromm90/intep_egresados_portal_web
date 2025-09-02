@@ -265,10 +265,32 @@ h2, .h2 {
   height: 350px;
 }
 
-/* servicios.html */
+/* portafolio-empresarial.html */
+.portada-portafolio {
+  background: linear-gradient(to top, rgba(47, 57, 199, 0.7) 0%,
+  rgba(74, 92, 255, 0.7) 100%), url('../img/portafolio-empresarial.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 6rem 0;
+  text-align: center;
+  height: 350px;
+}
+
+/* servicios-profesionales.html (antes: servicios.html) */
 .portada-servicios {
   background: linear-gradient(to top, rgba(47, 57, 199, 0.7) 0%,
   rgba(74, 92, 255, 0.7) 100%), url('../img/servicios-profesionales.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 6rem 0;
+  text-align: center;
+  height: 350px;
+}
+
+/* otros-servicios.html */
+.portada-otros-servicios {
+  background: linear-gradient(to top, rgba(47, 57, 199, 0.7) 0%,
+  rgba(74, 92, 255, 0.7) 100%), url('../img/otros-servicios.png') no-repeat center center;
   background-size: cover;
   color: #fff;
   padding: 6rem 0;
@@ -389,3 +411,44 @@ h2, .h2 {
   }
 }
 
+/* Overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.link-imagen {
+  position: relative;
+}
+
+.link-imagen:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text:hover .overlay{
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: #b79f26 !important;
+}
+
+/* links programas */
+.link-programas {
+  color: #000;
+  text-decoration: none;
+}
+
+.link-programas:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2.5px !important;
+  text-decoration-color: #b79f26 !important;
+}
